@@ -1,0 +1,96 @@
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  margin: 20px auto;
+  margin-left: 5%;
+  height: 70vh;
+}
+
+.blog-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eee;
+}
+
+.blog-item-details {
+  padding: 0px;
+}
+
+.blog-item-details .title {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.blog-item-details .description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.header-read-more {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #0070f3;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.header-read-more:hover {
+  color: #005bb5;
+}
+
+.header-read-more img {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .blog-item {
+      max-width: 90%;  /* Reduce max width for smaller screens */
+      height: auto;    /* Allow height to adjust */
+      margin-left: auto;  /* Center the item */
+  }
+
+  .blog-item-details .title {
+      font-size: 1.3rem;  /* Adjust title font size */
+  }
+
+  .blog-item-details .description {
+      font-size: 0.9rem;   /* Adjust description font size */
+  }
+
+  .header-read-more {
+      font-size: 0.9rem;   /* Adjust read more font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-item {
+      height: auto;  /* Further adjust height for very small screens */
+  }
+
+  .blog-item-details .title {
+      font-size: 1.2rem;  /* Further adjust title font size */
+  }
+
+  .blog-item-details .description {
+      font-size: 0.8rem;   /* Further adjust description font size */
+  }
+}

@@ -1,0 +1,153 @@
+.header {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 40px 20px; /* Padding around the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+}
+
+.header-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the container */
+  margin-bottom: 40px; /* Space between logo and heading section */
+}
+
+.header-contain img {
+  height: 50px; /* Set height for the logo */
+  width: auto; /* Keep the aspect ratio of the logo */
+}
+
+button {
+  background-color: #0070f3; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Remove the border */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 16px; /* Set the font size */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+}
+
+button img {
+  margin-left: 10px; /* Space between text and arrow image */
+  height: 16px; /* Set the size of the arrow */
+  width: auto;
+}
+
+/* Heading and Paragraph */
+.header-conatainer {
+  text-align: center;
+  max-width: 800px; /* Limit the width of the content */
+  margin-bottom: 30px;
+}
+
+.header-haeding {
+  font-size: 36px;
+  color: #333; /* Darker color for heading */
+  margin-bottom: 15px;
+}
+
+.header-para {
+  font-size: 16px;
+  color: #555; /* Lighter gray for paragraph */
+  margin-bottom: 25px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Subscription Form */
+.header-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px; /* Set input width */
+}
+
+.header-input:focus {
+  outline: none;
+  border-color: #0070f3; /* Change border color on focus */
+}
+
+.header-btn {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: #005bb5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .header {
+      padding: 30px 15px; /* Reduce padding on tablets */
+  }
+
+  .header-contain {
+      flex-direction: column; /* Stack logo and heading vertically */
+      align-items: center; /* Center items */
+      margin-bottom: 20px; /* Adjust bottom margin */
+  }
+
+  .header-contain img {
+      height: 40px; /* Adjust logo size */
+  }
+
+  .header-haeding {
+      font-size: 28px; /* Decrease font size for heading */
+  }
+
+  .header-para {
+      font-size: 14px; /* Decrease font size for paragraph */
+  }
+
+  .header-input {
+      width: 100%; /* Full width input on smaller screens */
+      max-width: 250px; /* Limit input width */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 20px 10px; /* Further reduce padding on mobile */
+  }
+
+  .header-haeding {
+      font-size: 24px; /* Further decrease font size */
+  }
+
+  .header-para {
+      font-size: 12px; /* Further decrease paragraph font size */
+  }
+
+  button {
+      padding: 8px 16px; /* Adjust button padding for mobile */
+      font-size: 14px; /* Decrease font size */
+  }
+
+  .header-input {
+      font-size: 14px; /* Decrease input font size */
+  }
+}

@@ -1,0 +1,79 @@
+/* General Footer Styling */
+.footer {
+  background-color: #1a1a1a; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center; /* Center-align content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Add some spacing between elements */
+}
+
+.footer img {
+  max-width: 150px; /* Limit logo size */
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #cccccc; /* Light gray text */
+}
+
+/* Footer Icons Container */
+.footer-icons {
+  display: flex;
+  gap: 15px; /* Add space between icons */
+}
+
+/* Footer Icons Styling */
+.footer-icon-image {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-icon-image:hover {
+  transform: scale(1.1); /* Scale icon slightly on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+      padding: 15px; /* Reduce padding on tablets */
+  }
+
+  .footer p {
+      font-size: 12px; /* Decrease font size for smaller screens */
+  }
+
+  .footer-icons {
+      flex-direction: column; /* Stack icons vertically on smaller screens */
+      gap: 10px; /* Adjust gap between icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+      padding: 10px; /* Further reduce padding on mobile */
+  }
+
+  .footer img {
+      max-width: 120px; /* Decrease logo size for mobile */
+  }
+
+  .footer p {
+      font-size: 10px; /* Further decrease font size */
+  }
+
+  .footer-icons {
+      gap: 8px; /* Reduce gap for mobile */
+  }
+
+  .footer-icon-image {
+      width: 25px; /* Decrease icon size for mobile */
+      height: 25px; /* Decrease icon height for mobile */
+  }
+}

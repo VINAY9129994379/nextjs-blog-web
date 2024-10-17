@@ -1,0 +1,77 @@
+/* BlogList.css */
+
+.blog-list {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.blog-list-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.blog-list-btn {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.blog-list-btn:hover {
+  background-color: #005bb5;
+}
+
+.blog-list-btn.active {
+  background-color: #005bb5;
+  font-weight: bold;
+  border-bottom: 3px solid #ffcc00; /* Highlight active button */
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+  .blogs {
+      grid-template-columns: 1fr; /* Single column layout for tablets */
+  }
+
+  .blog-list-container {
+      flex-wrap: wrap; /* Wrap buttons in smaller screens */
+  }
+
+  .blog-list-btn {
+      margin: 10px 5px; /* Adjust button margins */
+      padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-list {
+      padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .blog-list-btn {
+      width: 100%; /* Make buttons full-width on small screens */
+      margin: 5px 0; /* Adjust margins for better spacing */
+      padding: 10px; /* Ensure padding is consistent */
+  }
+
+  .blogs {
+      grid-template-columns: 1fr; /* Keep single column layout for small screens */
+      gap: 15px; /* Reduce gap between items */
+  }
+}

@@ -1,0 +1,166 @@
+/* page.css */
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header-logo {
+  width: 150px;
+  height: auto;
+}
+
+.header-btn {
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-btn img {
+  margin-left: 10px;
+}
+
+/* Center the author section */
+.page-author {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.page-author-profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.author-name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Center the image and text */
+.page-image-middle-details {
+  padding: 20px 0;
+  text-align: center; /* Center text */
+}
+
+.page-images {
+  width: 50%; /* Image takes 50% of the width */
+  height: auto;
+  margin: 0 auto 20px; /* Center the image and add bottom margin */
+}
+
+.intro {
+  font-size: 28px;
+  margin: 20px 0;
+  text-align: center; /* Center heading */
+}
+
+.intro-heading {
+  font-size: 22px;
+  margin: 20px 0 10px;
+  text-align: center; /* Center subheadings */
+}
+
+.intro-heading-para {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+  text-align: center; /* Center paragraphs */
+}
+
+.page-bottom {
+  margin-top: 40px;
+}
+
+.heading-conclusion {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.flex-page-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex-page-icons img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .page-header {
+      flex-direction: column; /* Stack header elements vertically */
+      align-items: flex-start; /* Align items to the start */
+      padding: 15px 0; /* Reduce padding */
+  }
+
+  .header-logo {
+      width: 120px; /* Adjust logo size for smaller screens */
+  }
+
+  .header-btn {
+      padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .page-author-profile {
+      width: 70px; /* Adjust profile picture size */
+      height: 70px; /* Adjust profile picture size */
+  }
+
+  .intro {
+      font-size: 24px; /* Decrease intro font size */
+  }
+
+  .intro-heading {
+      font-size: 20px; /* Decrease heading font size */
+  }
+
+  .page-images {
+      width: 80%; /* Increase image size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+      padding: 10px; /* Reduce overall padding */
+  }
+
+  .header-btn {
+      padding: 6px 12px; /* Further reduce button padding */
+  }
+
+  .intro {
+      font-size: 20px; /* Further decrease intro font size */
+  }
+
+  .intro-heading {
+      font-size: 18px; /* Further decrease heading font size */
+  }
+
+  .flex-page-icons {
+      flex-direction: column; /* Stack icons vertically on small screens */
+      gap: 10px; /* Adjust spacing */
+  }
+
+  .flex-page-icons img {
+      width: 30px; /* Adjust icon size for small screens */
+  }
+}
